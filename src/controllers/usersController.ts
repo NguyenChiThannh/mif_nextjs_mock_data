@@ -1,5 +1,5 @@
 import { GroupPost, groupPost } from '@/data/group-post'
-import { UserAccount, users } from '@/data/user'
+import { UserAccount, userInfo, users } from '@/data/user'
 import { getRandomInt, paginate, shuffleArray } from '@/utils/algorithm'
 import { ResponseMessages } from '@/utils/messages'
 import { successResponse } from '@/utils/responses'
@@ -31,7 +31,7 @@ const getUserInfoById = async (
   next: NextFunction,
 ) => {
   try {
-    const data = users[getRandomInt(0, users.length - 1)]
+    const data = userInfo
     successResponse({
       message: ResponseMessages.SUCCESS,
       res,

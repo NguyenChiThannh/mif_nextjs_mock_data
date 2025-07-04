@@ -278,7 +278,7 @@ const searchGroupByGroupName = async (
 ) => {
   try {
     const page = Number(req.query.page) || 0
-    const data = paginate(groups, page, 5)
+    const data = paginate(groups.slice(0, 10), page, 5)
     successResponse({
       message: ResponseMessages.SUCCESS,
       res,

@@ -279,3 +279,61 @@ export const users: UserAccount[] = popularNames.map((name, index) => {
     credentialsNonExpired: true,
   }
 })
+
+export const userInfo: UserAccount = {
+  id: '00000000000000000user000',
+  displayName: 'Nguyễn Thanh',
+  email: 'hehe@gmail.com',
+  profilePictureUrl:
+    'https://i.pinimg.com/736x/10/bc/bd/10bcbdc51fdacda178fbf70267e19251.jpg',
+  bio: 'Đây là tôi, một người mê phim ảnh!',
+  dob: '2025-06-17T17:00:00.000+00:00',
+  createdAt: '2024-11-23T16:10:57.622+00:00',
+  updatedAt: '2025-06-20T03:21:32.432+00:00',
+  provider: null,
+  googleSub: null,
+  userType: 'NORMAL',
+  balance: 0.0,
+  badgeMap: {
+    '0000000000000000group001': 'BRONZE',
+    '0000000000000000group002': 'GOLD',
+    '0000000000000000group006': 'BRONZE',
+    '0000000000000000group007': 'BRONZE',
+    '0000000000000000group010': 'SILVER',
+    '0000000000000000group011': 'PLATINUM',
+  },
+  enabled: true,
+  username: '00000000000000000user000',
+  authorities: [
+    {
+      authority: 'admin:create',
+    },
+    {
+      authority: 'management:read',
+    },
+    {
+      authority: 'management:delete',
+    },
+    {
+      authority: 'management:create',
+    },
+    {
+      authority: 'admin:delete',
+    },
+    {
+      authority: 'admin:update',
+    },
+    {
+      authority: 'admin:read',
+    },
+    {
+      authority: 'management:update',
+    },
+    {
+      authority: 'ROLE_ADMIN',
+    },
+  ],
+  accountNonLocked: true,
+  accountNonExpired: true,
+  credentialsNonExpired: true,
+}

@@ -10,6 +10,8 @@ Router.get('/health', (req: Request, res: Response) => {
 
 Router.post('/groups', groupsController.createGroup)
 
+Router.get('/groups/search', groupsController.searchGroupByGroupName)
+
 Router.patch('/groups/:groupId', groupsController.updateGroup)
 
 Router.delete('/groups/:groupId', groupsController.deleteGroup)
@@ -55,8 +57,6 @@ Router.get(
   '/groups/:groupId/pending-invitations',
   groupsController.getPendingInvitations,
 )
-
-Router.get('/groups/search', groupsController.searchGroupByGroupName)
 
 Router.post('/groups/batch-status', groupsController.getUserStatusInGroups)
 

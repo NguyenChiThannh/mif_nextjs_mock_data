@@ -1,4 +1,6 @@
+import { chatAIHistories, chatAIHistory } from '@/data/chatbot'
 import { PaginatedResponse } from '@/types/paginate.type'
+import { paginate } from '@/utils/algorithm'
 import { ResponseMessages } from '@/utils/messages'
 import { successResponse } from '@/utils/responses'
 import { Request, Response, NextFunction } from 'express'
@@ -25,42 +27,8 @@ const getHistoryChatBot = async (
   next: NextFunction,
 ) => {
   try {
-    const data: PaginatedResponse<any> = {
-      content: [
-        {
-          id: '685503d1cea8cc509b62f043',
-          userId: '6741fe91821b58239de2aac7',
-          query: 'thủ đô của việt nam',
-          response:
-            'Tôi là trợ lý ảo của hệ thống MovieInsideForum và chỉ có thể cung cấp thông tin liên quan đến phim ảnh hoặc các nhóm trong hệ thống. Nếu bạn có câu hỏi nào về phim hoặc các bài viết trong nhóm, hãy cho tôi biết!',
-          movies: null,
-          timestamp: '2025-06-20T06:46:41.830+00:00',
-        },
-      ],
-      pageable: {
-        pageNumber: 0,
-        pageSize: 10,
-        sort: {
-          empty: true,
-          sorted: false,
-          unsorted: true,
-        },
-        offset: 0,
-        paged: true,
-        unpaged: false,
-      },
-      size: 10,
-      number: 0,
-      sort: {
-        empty: true,
-        sorted: false,
-        unsorted: true,
-      },
-      first: true,
-      last: true,
-      numberOfElements: 1,
-      empty: false,
-    }
+    const page = parseInt(req.query.page as string) || 0
+    const data = paginate<chatAIHistory>(chatAIHistories, page, 10)
     successResponse({
       message: ResponseMessages.SUCCESS,
       res,

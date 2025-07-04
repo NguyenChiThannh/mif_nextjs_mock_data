@@ -68,7 +68,7 @@ const searchMoviesByTitle = async (
   next: NextFunction,
 ) => {
   try {
-    const data = paginate(shuffleArray(movies).slice(0, 4), 0, 4)
+    const data = paginate(movies.slice(0, 10), 0, 4)
     successResponse({
       message: ResponseMessages.SUCCESS,
       res,
