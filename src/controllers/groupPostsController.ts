@@ -173,8 +173,11 @@ const getReportsByGroupId = async (
 ) => {
   try {
     const page = Number(req.query.page) || 0
+    const status = req.query.status as any
     const data = paginate(
-      groupPostReports.map((report) => (report.status = 'PENDING')),
+      groupPostReports.map((report) => {
+        if ((report.status = status)) return report
+      }),
       page,
       10,
     )

@@ -26,7 +26,7 @@ export const events: EventMIF[] = [
     description: 'Cùng phân tích biểu tượng và ẩn dụ trong Dune: Phần 2',
     startDate: '2025-07-01T19:00:00.000+00:00',
     eventPicture:
-      'https://datasets-server.huggingface.co/cached-assets/skvarre/movie_posters-100k/--/8ccca1ee87b9b95d580c31a981422b3b18121c7d/--/default/train/35/image/image.jpg?Expires=1751276179&Signature=ijW7oJJduiBQM0dfNMbdM8IG6phFl5zm4MxpWDfuWyTEq-RBx-LW4hCvdhhEX7rkoVuNkGBPEwcD74ZsTP3kdUi5IpznKmszJivhrdkI9m4~TStYUu-OjsMmLFpBfofTOWVvwnQcRfRtsY8XhNnN36ZjFYr3kz8LhUgGnhZ8P7FRPKJ9syA-TVZUK7ixaxNxNEUlrfbzDeOAsRxtALNrEbrgoyEWhC2sVQ3o3jwjau6W1r9QGoR3wxULxrHZE5u4NjnUVnaha8200HpBtZJbd3uGa4OGX7hHavWFE1sjb4Mm79j6b6vstKlF1g2ulleGIbtZlgwEdqKeNENvnqOqlQ__&Key-Pair-Id=K3EI6M078Z3AC3',
+      'https://image.tmdb.org/t/p/original/sap0BXb6dJUhkDbJEd6nurMQrwq.jpg',
     socialType: 'MIF_LIVE',
     eventType: 'ONLINE',
     link: 'http://mif.vercel.app/vi/live?roomID=1001',
@@ -52,7 +52,7 @@ export const events: EventMIF[] = [
     description: 'Buổi họp mặt fan One Piece khu vực Hà Nội',
     startDate: '2025-07-02T14:00:00.000+00:00',
     eventPicture:
-      'https://datasets-server.huggingface.co/cached-assets/skvarre/movie_posters-100k/--/8ccca1ee87b9b95d580c31a981422b3b18121c7d/--/default/train/15/image/image.jpg?Expires=1751276179&Signature=k90MWJ1IcTPTVQvSbvNRFdcItZZS-oV6RGyyHgl1~g~DWBmpSKC~lVxcftbjOHD4kGs4-axRtN9Z7tBsU5tda7ZuECcZ9b6ahTm0q9gHt9vYXeJeKfA4g2VKo2Agm9nlP~ku~sThQc5im0ksw5lDDW46oqG6cBt3OSaIdPlLFe6qAJlzoYO~LnEAoOdGFKRkMw13jCWO70y~I5ZOIrti4P92HUEZ2zYzRm-BfBRXg2cYgBM9E5Asv~IRjMQ6ufN-HMm78M1CfN~lvDgrYvYeIrPFrZQhHXXzM2sBCOIsBeIPX9TbXXBqtajPT9vewAIuyV7wseKlxzaivLslN9I0kA__&Key-Pair-Id=K3EI6M078Z3AC3',
+      'https://image.tmdb.org/t/p/original/OAXCENRg0smntp0uPhTQMPxs0O.jpg',
     eventType: 'OFFLINE',
     location: 'Hà Nội, Việt Nam',
     userJoin: [
@@ -70,7 +70,7 @@ export const events: EventMIF[] = [
     description: 'Cùng xem và chia sẻ cảm xúc về Inside Out 2',
     startDate: '2025-07-03T16:30:00.000+00:00',
     eventPicture:
-      'https://datasets-server.huggingface.co/cached-assets/skvarre/movie_posters-100k/--/8ccca1ee87b9b95d580c31a981422b3b18121c7d/--/default/train/41/image/image.jpg?Expires=1751276179&Signature=rAJDOE7GZyhzNm0erbyf6N3BxnWx6aGUgS66seWtx1MpyzNaPeYq0Nu9G0n1W~38ufWb1LF1cJuQJa7sYDoZ4zZZoW3tMyA35LB2gu4D2kpczTpSh8V94W8rXVppRdDYqkHzjVEOkALx0esA~Kj~FIiC-3QfvobqbjZBW4-hdm8TEjj7XQXCavnf17kwjGonGRoiHRmlmkDetnvukWIBmVIkkXvuGHCie3Yw~Gu1L3w0DYFfX6UXB25on6YLzhV-pJT9vcWbBAgxOub~YmBRhF3pqH38GK8l6GLdgDC1rSIGgfZ9EArcfiDg7Dv-BMkE8tcLgQ~1eA3e6TYkaL2wHw__&Key-Pair-Id=K3EI6M078Z3AC3',
+      'https://image.tmdb.org/t/p/original/lRHE0vzf3oYJrhbsHXjIkF4Tl5A.jpg',
     socialType: 'MIF_LIVE',
     eventType: 'ONLINE',
     link: 'http://mif.vercel.app/vi/live?roomID=1002',
